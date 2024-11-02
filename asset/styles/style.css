@@ -1,0 +1,184 @@
+*body {
+
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* Warna latar belakang mode terang */
+    color: #000;
+    /* Warna teks mode terang */
+    transition: background-color 0.5s, color 0.5s;
+    font-family: 'Poppins';
+    /* Transisi halus */
+}
+
+.dark-mode {
+    background-color: #8fa679;
+    color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(30px);
+
+}
+
+@keyframes fadeIn {
+    to {
+        transform: translateY(0);
+        opacity: 100;
+    }
+}
+
+.item {
+    color: #f5f5f5;
+    text-align: center;
+    font-family: 'Poppins';
+
+}
+
+.deksripsi {
+    text-transform: capitalize;
+    font-weight: 500;
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.keqing {
+    width: 50%;
+    margin: 10px 10px;
+    border-radius: 20px 20px;
+    box-shadow:
+        0 0 4px #faf9f6, 
+        1px 1px 6px #faf9f6, 
+        2px 2px 8px #faf9f6;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    object-position: 0% 10%;
+}
+
+#baten {
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 10px;
+    color: #f5f5f5;
+    background-color: #afc7b1;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    transform: scale(1);
+    font-family: 'Poppins';
+
+}
+
+#baten:hover {
+    transform: scale(1.05);
+}
+
+#baten:active {
+    transform: scale(0.95);
+}
+
+.item-anchor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    margin: 10px;
+    column-gap: 10px;
+    transition: 0.5s;
+}
+
+.item-anchor:hover {
+    transform: scale(1.05);
+}
+
+/* logo icon */
+.fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 50px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 3px;
+    border-radius: 20px 20px;
+    text-decoration: none;
+    background-color: #afc7b1;
+    font-family: 'Poppins';
+    transition: 0.6s;
+
+
+}
+
+a {
+    font-family: 'Poppins';
+    color: #000;
+}
+
+/*
+*/
+.fa-telegram:hover {
+    color: wheat;
+    transform: scale(1.5);
+    box-shadow: 0  0  6px #000;
+}
+
+
+.fa-instagram:hover {
+    color: #000;
+    transform: scale(1.5);
+    box-shadow: 0  0  6px #000;
+}
+
+.fa-whatsapp:hover {
+    color: wheat;
+    transform: scale(1.5);
+    box-shadow: 0  0  6px #000;
+}
+
+.fa-tumblr:hover {
+    color: #000;
+    transform: scale(1.5);
+    box-shadow: 0  0  6px #000;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.about-teks-desk {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    text-align: center;
+    margin: 10px;
+    padding: 40px;
+    animation: testFrame 1s forwards;
+    letter-spacing: 20px;
+    transform: translateY(20px);
+    opacity: 0%;
+    transition: 2s;
+}
+
+@keyframes testFrame {
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+        letter-spacing: normal;
+    }
+}
